@@ -3,7 +3,6 @@
 #include<linux/kernel.h> // printk
 #include<linux/sched.h>
 
-MODULE_AUTHOR("mirafra");
 MODULE_DESCRIPTION("Kernel Panic Example");
 MODULE_LICENSE("GPLV2");
 
