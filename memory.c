@@ -11,7 +11,6 @@
 #include <linux/errno.h> /* error codes */
 #include <linux/fcntl.h> /* O_ACCMODE */
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Mirafra");
 MODULE_DESCRIPTION("This is my test module of character driver");
 
 dev_t chr_dev;
