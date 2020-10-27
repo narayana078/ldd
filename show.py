@@ -1,5 +1,6 @@
+#Descripition : list 2.4 Ghz and 5 Ghz channels and frequiencies
+#Name : Lakshmi Narayana
 import subprocess
-import os
 import platform
 
 def scan(interface):
