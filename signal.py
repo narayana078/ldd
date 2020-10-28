@@ -39,7 +39,7 @@ def twonum():
         if item.find("Current Frequency:2.4")>0:
             lis=lis[:-1]
             item=str(item)
-            chan=item[39:-1]
+            chan=item[28:-13]
     for it in sig:
         if it.find("level")>0:
             cha=str(it)
@@ -47,7 +47,7 @@ def twonum():
     i=0
     for item in lis:
         tup=item
-        if(tup[0]==chan):
+        if(tup[1]==chan):
             tup=tup+(signal,)
             lis.remove(item)
             lis.insert(i,tup)
@@ -73,7 +73,7 @@ def fivenum():
         if item.find("Current Frequency:5.")>0:
             lis=lis[:-1]
             item=str(item)
-            chan=item[39:-1]
+            chan=item[28:-13]
     for it in sig:
         if it.find("level")>0:
             cha=str(it)
@@ -81,7 +81,7 @@ def fivenum():
     i=0
     for item in lis:
         tup=item
-        if(tup[0]==chan):
+        if(tup[1]==chan):
             tup=tup+(signal,)
             lis.remove(item)
             lis.insert(i,tup)
